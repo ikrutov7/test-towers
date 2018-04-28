@@ -1,0 +1,13 @@
+<div class="tower__row">	
+	<div class="tower" *ngFor="let tower of towers">
+		<div class="tower__name">{{tower.name}}</div>
+		<div class="tower__percent">{{tower.percent}}{{'%'}}</div>
+		<div class="tower__status" [ngClass]="setClasses(tower)"></div>
+		<div class="tower__box">
+			<div class="tower__inner" [ngStyle]="getHeight(tower)"></div>
+		</div>
+		<div class="tower__title">{{tower.title}}</div>	
+		<div class="tower__value">{{tower.value}}</div>
+		<div class="tower__status" [ngClass]="setClasses(tower)"></div>	
+	</div>
+</div>
